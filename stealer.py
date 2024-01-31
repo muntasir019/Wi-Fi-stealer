@@ -21,12 +21,12 @@ def extract_wifi_credentials():
 
         # Loop through Wi-Fi files
         for filename in os.listdir(script_directory):
-            if filename.startswith("Wi-Fi") and filename.endswith(".xml"):
+            if filename.startswith("Wi-Fi") and filename.endswith(".xml") or filename.startswith("WiFi") and filename.endswith(".xml"):
                 file_path = os.path.join(script_directory, filename)
                 tree = ET.parse(file_path)
                 root = tree.getroot()
 
-                # Find the name under the WLANProfile element
+                # Find the name under the WLAN Profile element
                 wlan_name = root.find(".//{http://www.microsoft.com/networking/WLAN/profile/v1}name").text
 
                 with open(file_path, "r") as f:
